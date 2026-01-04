@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: proxyserver
+Version: 1.0.0
+Summary: Async HTTP/HTTPS Forward Proxy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0
+
+# Async Proxy Server
+
+A production-style async HTTP/HTTPS forward proxy implemented in Python.
+
+## Features
+- Async event-driven architecture
+- HTTP & HTTPS (CONNECT) support
+- TLS SNI inspection
+- Policy engine
+- Metrics endpoint
+- Hardened against abuse
+- Layered YAML configuration
+- Graceful shutdown
+- CLI + script-based execution
+
+## Setup
+
+```bash
+pip install -r requirements.txt

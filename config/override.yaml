@@ -1,0 +1,15 @@
+limits:
+  max_connections: 200
+  max_conn_per_ip: 5
+
+policy:
+  blocked_domains:
+    - youtube.com
+    - facebook.com
+    - instagram.com
+    - reddit.com
+
+tls:
+  blocked_sni:
+    - openai.com
+    - chat.openai.com

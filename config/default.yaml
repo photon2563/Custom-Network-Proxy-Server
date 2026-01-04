@@ -1,0 +1,36 @@
+server:
+  host: 127.0.0.1
+  port: 8888
+
+limits:
+  max_connections: 2000
+  max_conn_per_ip: 20
+  max_header_bytes: 16384
+
+timeouts:
+  read: 30
+  write: 30
+  header_read: 10
+
+buffer:
+  size: 4096
+
+policy:
+  allowed_methods:
+    - GET
+    - POST
+    - CONNECT
+
+  blocked_domains:
+    - youtube.com
+    - facebook.com
+    - instagram.com
+
+tls:
+  blocked_sni:
+    - netflix.com
+    - openai.com
+
+observability:
+  enabled: true
+  log_level: info
